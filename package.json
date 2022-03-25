@@ -1,11 +1,14 @@
 {
+  "homepage": "https://shivsharan10.github.io/Symposium",
   "name": "comments-with-polygon",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@chakra-ui/icons": "^1.1.5",
@@ -42,6 +45,7 @@
     "eslint-config-next": "12.0.10",
     "ethereum-waffle": "^3.4.0",
     "ethers": "^5.5.4",
+    "gh-pages": "^3.2.3",
     "hardhat": "^2.8.4",
     "typescript": "4.5.5"
   }
